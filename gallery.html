@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADM Construction LLC</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="body-wrapper">
+        <header class="padtopsides15">
+            <div class="alert-banner"></div>
+            <div class="header-top">
+                <div class="logo-info">
+                    <img src="media/small-logo.png" >
+                </div>
+                <div class="cta-and-number">
+                    <span class="phone-number">435-619-4588</span>
+                    <a href="contact.html" class="quote-btn">Get a Quote</a>
+                </div>
+            </div>
+            <nav>
+                <div class="top-nav" id="my-top-nav">
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html" class="active">Gallery</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="photo-gallery">
+                <h1>Gallery</h1>
+                <div class="row">
+                    <div class="column">
+                        <img src="media/dreams-reality.webp" alt="" style="width:100%">
+                        <img src="media/20180403_112730.jpg" alt="" style="width:100%">
+                        <img src="media/Resized_20190805_113825.jpeg" alt="" style="width:100%">
+                        <img src="media/9028075654208209037.JPG" alt="" style="width:100%">
+                        <img src="" alt="" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="media/enjoyit.webp" alt="" style="width:100%">
+                        <img src="media/20190423_164442.jpg" alt="" style="width:100%">
+                        <img src="media/7798110438646710898.JPG" alt="" style="width:100%">
+                        <img src="media/6272563080341572323.JPG" alt="" style="width:100%">
+                        <img src="" alt="" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="media/luxury.webp" alt="" style="width:100%">
+                        <img src="media/624924805485345283.JPG" alt="" style="width:100%">
+                        <img src="media/8401010787005841983.JPG" alt="" style="width:100%">
+                        <img src="media/Photianos Pool_004.jpg" alt="" style="width:100%">
+                        <img src="" alt="" style="width:100%">
+                    </div>
+                    <div class="column">
+                        <img src="media/masthead.webp" alt="" style="width:100%">
+                        <img src="media/Resized_20190830_131633(1).jpeg" alt="" style="width:100%">
+                        <img src="media/Tarsitano - Aqua Blue Mini.jpg" alt="" style="width:100%">
+                        <img src="media/buildit.webp" alt="" style="width:100%">
+                        <img src="media/rock feature.jpeg" alt="" style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="padtopsides15 padbottom15">
+            <div class="footer-wrapper">
+                <div class="footer-main">
+                    <div class="logo-info">
+                        <a href="index.html"><img src="media/small-logo.png" ></a>
+                        <p>Specializing in New Swimming</p><p>Pools and Remodels</p>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>How to Reach Us</h3>
+                        <br>
+                        <p>P.O Box 252</p>
+                        <p>Hurricane, UT. 84737</p>
+                        <br>
+                        <p>Phone: 435-619-4588</p>
+                        <p>Email: adm.builds25@gmail.com</p>
+                    </div>
+                    <div class="footer-menu">
+                        <h3>Explore for more info</h3>
+                        <br>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <div class="footer-rights">
+                            <p>&copy; <span id="current-year"></span> ADM Construction LLC</p>
+                            <p>All Rights Reserved</p>
+                        </div>
+                        <div class="footer-terms">
+                            <p><a href="#">View our privacy policy</a></p>
+                            <p><a href="#">Terms &amp; Conditions</a></p>
+                        </div>
+                    </div>
+                    <div class="footer-disclaimer">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="built-by">
+                        <p>Proudly Developed By: </p>
+                        <a href="#">The Peach Ave</a>
+                        <a href="#"><img src="media/The-Peach-Ave-Logo.png" width="50px"></a>
+                </div>
+            </div>
+        </footer>
+        
+        <!--get date script for copyright-->
+        <script>
+            document.getElementById("current-year").innerHTML = new Date().getFullYear();
+        </script>
+        <script>
+            function myFunction() {
+            var x = document.getElementById("my-top-nav");
+            if (x.className === "top-nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "top-nav";
+            }
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,550 @@
+/*
+    Author: Trenton Ipson
+    Company: The Peach Ave
+    Date: 6/3/2025
+    Description: CSS created for ADM Construction
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: white;
+}
+.body-wrapper {
+    background-color:white;
+}
+.padtopsides15 {
+    padding-top:15px;
+    padding-left:15px;
+    padding-right:15px;
+}
+.padbottom15 {
+    padding-bottom:15px;
+}
+.padall15 {
+    padding:15px;
+}
+
+
+
+
+
+/* ==================================== */
+/* ========== header section ========== */
+/* ==================================== */
+header {
+    width:100%;
+    background:linear-gradient(180deg, #0094a1,#83c5be,#EFD6AC);
+}
+.header-top {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+   /* padding:10px 20px;*/
+    margin:auto;
+}
+.logo-info img{
+    height:75px;
+}
+.cta-and-number {
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+.quote-btn {
+    background-color:#a7f4f6;
+    color:#31516a;
+    padding:10px 16px;
+    text-decoration:none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.quote-btn:hover {
+    background: #0094a1;
+    color:white;
+}
+.phone-number {
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+}
+
+
+
+
+/* ================================ */
+/* ========== Navigation ========== */
+/* ================================ */
+
+nav {
+    margin:auto;
+    max-width:600px;
+}
+.top-nav {
+    overflow: hidden;
+    /*background-color:#EFD6AC;*/
+}
+.top-nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow:2px 2px 5px white;
+}
+.top-nav a:hover {
+    background-color:bisque;
+    color: black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.top-nav a.active {
+    background-color:bisque;
+    color:black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.top-nav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 599px) {
+  .top-nav a {display: none;}
+  .top-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .top-nav.responsive {position: relative;}
+  .top-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+
+/* ================================== */
+/* ========== Main Content ========== */
+/* ================================== */
+/* ================================== */
+/* ========== Hero Content ========== */
+/* ================================== */
+.masthead {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    width:100%;
+    height:60vh;
+    overflow:hidden;
+    background-size:cover !important;
+    background:radial-gradient(ellipse at center, rgba(0,0,0,.50) 0%, rgba(0,0,0,.50) 0%, rgba(0,0,0,0.50) 100%), url(../media/masthead.webp) no-repeat center center scroll;
+}
+.masthead h1 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 11vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.9);
+  margin-bottom: 40px;
+}
+.masthead h2 {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 6vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.9);
+  margin-bottom: 40px;
+}
+.masthead p {
+  font-style: normal;
+  font-weight: bold;
+  color: #eee;
+  font-size: 4vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.9);
+  margin-bottom: 40px;
+}
+.masthead button {
+  background: #a7f4f6;
+  transition: background ease .25s;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: #31516a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.masthead button:hover {
+  background: #0094a1;
+  color:white;
+}
+.masthead button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+/* ================================== */
+/* ========== Main Content ========== */
+/* ================================== */
+/* ============================== */
+/* ========== Main top ========== */
+/* ============================== */
+.main-top h2 {
+    font-family: "Rock Salt", cursive;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color:#31516a;
+    text-align: center;
+}
+/* =================================== */
+/* ========== Main Features ========== */
+/* =================================== */
+.main-features {
+    padding:0 15px;
+    max-width: 1200px;
+    margin:auto;
+}
+.text-content h2 {
+    font-size:2rem;
+    line-height: 1.3;
+    color:#31516a;
+    margin-bottom:15px;
+    text-align:center;
+}
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width:500px;
+    font-weight: 400;
+
+}
+.image-content img {
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+.the-process {
+    text-align:center;
+}
+.the-process h2 {
+    font-size: 40px;
+}
+/* ======================================= */
+/* ========== Main Card Section ========== */
+/* ======================================= */
+.card-container {
+    display:grid;
+    grid-template-columns: auto;
+    margin-bottom:15px;
+}
+.card {
+    width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+.card:hover {
+    background-color:white;
+    box-shadow:0 8px 16px rgba(0,0,0,0.2);
+}
+.card .container {
+    text-align:center;
+    padding: 10px 15px;
+    margin-bottom:15px;
+}
+.card h3 {
+    padding:15px;
+    font-size:30px;
+}
+.card img {
+    width:100%;
+}
+.card button {
+  background: #a7f4f6;
+  transition: background ease .25s;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: #31516a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.card button:hover {
+  background: #0094a1;
+  color:white;
+}
+.card button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+/* ================================= */
+/* ========== Main Bottom ========== */
+/* ================================= */
+.main-bottom {
+    background-color:#31516a;
+    color:white;
+}
+.main-bottom .container {
+    max-width:600px;
+    margin:auto;
+    text-align:center;
+}
+.main-bottom h2 {
+    font-size:xx-large;
+    padding-bottom:20px;
+}
+.main-bottom p {
+    padding-bottom:20px;
+}
+.main-bottom button {
+  background: #a7f4f6;
+  transition: background ease .25s;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: #31516a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.main-bottom button:hover {
+  background: #0094a1;
+  color:white;
+}
+.main-bottom button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+/* ================================ */
+/* ========== About Page ========== */
+/* ================================ */
+/* =================================== */
+/* ========== About Content ========== */
+/* =================================== */
+.about-top {
+    max-width: 600px;
+    margin:auto;
+    padding:20px;
+}
+.about-top h1 {
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    color:#31516a;
+    text-align: center;   
+}
+.about-content {
+    max-width:600px;
+    margin:auto;
+    display:block;
+}
+.about-content div {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.about-content img{
+    width:100%;
+}
+.about-list p{
+    font-weight: bolder;
+    line-height: 3;
+    text-align: Center;
+    color:#31516a;
+}
+.about-bottom p{
+    padding: 20px;
+}
+.about-bottom p:last-child {
+    text-align:center;
+    font-weight: bolder;
+    color:#31516a;
+}
+/* ================================== */
+/* ========== Gallery Page ========== */
+/* ================================== */
+/* ===================================== */
+/* ========== Gallery Content ========== */
+/* ===================================== */
+.photo-gallery h1 {
+    text-align:center;
+    padding:32px;
+}
+.photo-gallery .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.photo-gallery .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.photo-gallery .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .photo-gallery .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .photo-gallery .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* ================================== */
+/* ========== Contact Page ========== */
+/* ================================== */
+/* ===================================== */
+/* ========== Contact Content ========== */
+/* ===================================== */
+.contact-content {
+    border-radius: 5px;
+    padding: 10px;
+    max-width:600px;
+    margin:auto;
+    
+}
+.contact-content h1 {
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+.contact-content .row {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+.contact-card {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin:15px;
+}
+.contact-card h3 {
+    color:#31516a;
+    padding:20px;
+    
+}
+.contact-card .container {
+    margin:20px;
+    padding:20px;
+    text-align: center;
+}
+.contact-card .container p {
+    line-height: 1.7;
+
+}
+.contact-card a {
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+/* ==================================== */
+/* ========== Footer Content ========== */
+/* ==================================== */
+footer {
+    background-color:#31516a;
+    color:white;
+}
+footer a {
+    color:white;
+    text-decoration:none; 
+}
+footer a:hover {
+    color:#EFD6AC;
+}
+.footer-wrapper {
+    max-width:600px;
+    margin:auto;
+}
+.footer-main {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.footer-main .logo-info {
+    text-align:center;
+}
+.footer-main .logo-info img {
+    background-color:white;
+}
+.footer-bottom {
+    border-top: 1px solid #a7f4f6;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.footer-copyright {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.footer-menu li {
+    list-style:none;
+}
+/* ============================== */
+/* ========== Build By ========== */
+/* ============================== */
+.built-by {
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin:auto;
+}
+

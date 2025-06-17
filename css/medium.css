@@ -1,0 +1,117 @@
+@media screen and (min-width:600px) {
+    /* ========== Navigation ========== */
+    .top-nav {
+        list-style:none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap:20px;
+    }
+    /* ========== Main Top ========== */
+    .main-top h2 {
+        font-size:100px;
+    }
+    /* ========== Promo Section ========== */
+    .promo-section {
+        display:flex;
+        min-width:600px;
+        justify-content:space-evenly;
+        align-items:center;
+        background-color: white;
+        margin:60px;
+    }
+    .text-content {
+        height:50%;
+        padding: 30px 20px;
+        border-radius: 20px;
+        margin: 0 -30px;
+        background-color:white;
+        box-shadow: 0 12px 50px rgba(83, 201, 255, 0.918);
+        z-index: 1;
+    }
+    .text-content h2 {
+        text-align:left;
+    }
+    .image-content img {
+        box-shadow: 0 12px 24px rgba(0,0,0,0.50);
+        height: 600px;
+        z-index: 0;
+        
+    }
+    /* ========== Card Section ========== */
+    .card-container {
+        grid-template-columns: auto auto auto;
+        gap:20px;
+    }
+    .card img {
+        max-height: 50%;
+        overflow: hidden;
+    }
+    /* ========== Main Bottom ========== */
+    .main-bottom .container {
+        text-align: left;
+    }
+
+
+
+    /* = about us = */
+    .about-top {
+        max-width: 1000px;
+        margin-bottom:20px;
+    }
+    .about-content {
+        min-width: 600px;
+        max-width: 1000px;
+        margin:auto;
+    }
+    .about-content img {
+        height:300px;
+        object-fit:cover;
+    }
+
+    .about-list {
+        padding:10px;
+        display:grid;
+        grid-template-columns: auto auto;
+        padding:10px;
+    }
+
+
+
+
+    /* = contact us */
+    .contact-content {
+        min-width:600px;
+        max-width:1000px;
+    }
+    .contact-content .row {
+        grid-template-columns: auto auto;
+        gap:50px;
+    }
+
+
+
+
+
+
+
+
+
+    
+    /* ========== Footer ========== */
+    .footer-wrapper {
+        max-width: 960px;
+    }
+    .footer-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-copyright {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+}
